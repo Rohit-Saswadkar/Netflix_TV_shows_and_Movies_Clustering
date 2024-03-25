@@ -1,28 +1,21 @@
-Netflix_Movies_-_TV_Show_Clustering_Unsupervised_ML
-Netflix Dataset Analysis and Recommendation System
-This project aims to analyze the Netflix Dataset of movies and TV shows until 2019, obtained from the third-party search engine Flixable. The primary objective is to group the content into relevant clusters using NLP techniques to enhance the user experience through a recommendation system. This system will help mitigate subscriber churn for Netflix, which currently boasts over 220 million subscribers.
 
-Moreover, this project seeks to uncover valuable insights and trends in the streaming entertainment industry by analyzing the dataset.
+## Netflix Dataset Analysis and Recommendation System
 
-Project Overview The project was carried out in the following step-by-step process:
+### Project Overview
 
-Handling Null Values: Null values in the dataset were addressed to ensure data integrity and accuracy.
+The project focuses on analyzing the Netflix Dataset of movies and TV shows until 2019, obtained from the third-party search engine Flixable. The primary objective is to enhance user experience and reduce subscriber churn through a recommendation system. With over 220 million subscribers, this system is crucial for Netflix's success.
 
-Managing Nested Columns: Columns containing nested data, such as director, cast, listed_in, and country, were processed to enable better visualization and analysis.
+### Methodology
 
-Binning Ratings: The rating attribute was binned into categories such as adult, children's, family-friendly, and not rated to facilitate analysis and recommendation.
+1. **Handling Null Values**: Addressed null values in the dataset to ensure data integrity and accuracy.
+2. **Managing Nested Columns**: Processed columns with nested data like director, cast, listed_in, and country for better visualization and analysis.
+3. **Binning Ratings**: Categorized the rating attribute into groups such as adult, children's, family-friendly, and not rated for analysis and recommendation.
+4. **Exploratory Data Analysis (EDA)**: Employed EDA techniques to gain insights, understand patterns, and prevent subscriber churn.
+5. **Creating Clusters**: Applied clustering techniques based on attributes like director, cast, country, genre, rating, and description. Tokenized, preprocessed, and vectorized these attributes using the TF-IDF vectorizer.
+6. **Dimensionality Reduction**: Reduced the dataset's dimensionality using Principal Component Analysis (PCA) to enhance performance and eliminate noise.
+7. **Clustering Algorithms**: Utilized K-Means Clustering and Agglomerative Hierarchical Clustering algorithms to create clusters. Determined the optimal number of clusters (4 for K-Means, 2 for hierarchical clustering) using various evaluation methods.
+8. **Content-Based Recommender System**: Developed a content-based recommender system using the cosine similarity matrix to offer personalized recommendations. The goal is to reduce churn by providing relevant and engaging content.
 
-Exploratory Data Analysis (EDA): EDA techniques were employed to gain insights and understand patterns and trends in the dataset, with the goal of preventing subscriber churn.
+### Conclusion
 
-Creating Clusters: Clustering techniques were applied to group the content based on attributes like director, cast, country, genre, rating, and description. These attributes were tokenized, preprocessed, and vectorized using the TF-IDF vectorizer.
-
-Dimensionality Reduction: The dimensionality of the dataset was reduced using Principal Component Analysis (PCA) to improve performance and eliminate noise.
-
-Clustering Algorithms: Both K-Means Clustering and Agglomerative Hierarchical Clustering algorithms were utilized to create clusters. The optimal number of clusters was determined (4 for K-Means and 2 for hierarchical clustering) using various evaluation methods.
-
-Content-Based Recommender System: A content-based recommender system was developed using the cosine similarity matrix to provide personalized recommendations to users. The aim was to reduce subscriber churn by offering relevant and engaging content.
-
-The comprehensive analysis and recommendation system developed in this project are expected to enhance user satisfaction and ultimately improve subscriber retention rates for Netflix.
-
-Conclusion
-By conducting this comprehensive analysis of the Netflix dataset and developing a content-based recommendation system, the project aims to enhance user satisfaction and reduce subscriber churn for Netflix. The clustering of content allows for improved grouping and organization, while the recommender system provides personalized recommendations based on user preferences. It is expected that these efforts will lead to higher user retention rates and ultimately benefit Netflix in maintaining its position as a leading streaming entertainment platform.
+This project's comprehensive analysis and recommendation system aim to boost user satisfaction and reduce subscriber churn for Netflix. By clustering content and providing personalized recommendations, it's expected to improve user retention rates and solidify Netflix's position as a leading streaming entertainment platform.
